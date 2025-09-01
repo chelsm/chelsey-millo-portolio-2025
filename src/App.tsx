@@ -1,35 +1,47 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { Box, Button, Container } from "@mui/material";
+import { useThemeColors } from "./context/themeContext";
+import Navbar from "./components/navbar";
+import ButtonSwitch from "./components/buttons/switch";
 
-function App() {
-  const [count, setCount] = useState(0)
+const App = () => {
+  const { state, dispatch } = useThemeColors();
 
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
-}
+    <Box
+      sx={{
+        bgcolor: state.colors.background,
+        minHeight: "100vh",
+        transition: "background-color 0.3s ease, color 0.3s ease",
+      }}
+    >
+      <Navbar />
 
-export default App
+      <Container maxWidth="lg" disableGutters component="main">
+        <Box
+          sx={{
+            border: "solid red",
+            width: {
+              xs: "90%",
+              sm: "80%",
+              md: "70%",
+            },
+            margin: "auto",
+          }}
+        >
+          Contenu responsive
+        </Box>
+      </Container>
+      <Box
+        sx={{
+          position: "fixed",
+          bottom: 16,
+          right: 16,
+        }}
+      >
+        <ButtonSwitch darkMode={state.darkMode} dispatch={dispatch} />
+      </Box>
+    </Box>
+  );
+};
+
+export default App;
