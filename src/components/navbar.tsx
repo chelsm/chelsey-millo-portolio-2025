@@ -26,7 +26,7 @@ const useNavbarStyles = (colors: {
     display: "flex",
     justifyContent: "space-between",
     alignItems: "center",
-    minHeight: { xs: 60, sm: 70, md: 80 },
+    height: 80,
     px: { xs: 1, sm: 3, md: 6 },
     bgcolor: colors.navBackground,
     color: colors.primary,
@@ -44,11 +44,12 @@ const useNavbarStyles = (colors: {
   drawerPaper: {
     boxSizing: "border-box",
     width: 240,
+    bgcolor: colors.navBackground,
   },
   drawerHeader: {
     textAlign: "center",
     p: 2,
-    bgcolor: colors.primary,
+    bgcolor: colors.navBackground,
   },
 });
 
@@ -63,7 +64,12 @@ const Navbar = () => {
   const styles = useNavbarStyles(colors);
 
   const Logo = ({ width }: { width: number }) => (
-    <Box component="img" src={state.darkMode ? pinkLogo : redLogo } alt="Logo" sx={{ width, height: "auto" }} />
+    <Box
+      component="img"
+      src={state.darkMode ? pinkLogo : redLogo}
+      alt="Logo"
+      sx={{ width, height: "auto" }}
+    />
   );
 
   const drawer = (
@@ -74,7 +80,17 @@ const Navbar = () => {
         {navItems.map((item) => (
           <ListItem key={item} disablePadding>
             <ListItemButton sx={{ textAlign: "left" }}>
-              <ListItemText primary={item} />
+              <ListItemText
+                primary={item}
+                slotProps={{
+                  primary: {
+                    sx: {
+                      fontSize: "1.2rem",
+                      fontFamily: "'Poppins-Medium', sans-serif",
+                    },
+                  },
+                }}
+              />
             </ListItemButton>
           </ListItem>
         ))}
@@ -90,6 +106,7 @@ const Navbar = () => {
       <AppBar
         component="nav"
         position="static"
+        elevation={0}
         sx={{ bgcolor: colors.primary }}
       >
         <Toolbar sx={styles.toolbar}>

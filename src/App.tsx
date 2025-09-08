@@ -2,6 +2,7 @@ import { Box, Button, Container } from "@mui/material";
 import { useThemeColors } from "./context/themeContext";
 import Navbar from "./components/navbar";
 import ButtonSwitch from "./components/buttons/switch";
+import Introduction from "./components/introduction";
 
 const App = () => {
   const { state, dispatch } = useThemeColors();
@@ -19,7 +20,6 @@ const App = () => {
       <Container maxWidth="lg" disableGutters component="main">
         <Box
           sx={{
-            border: "solid red",
             width: {
               xs: "90%",
               sm: "80%",
@@ -28,7 +28,7 @@ const App = () => {
             margin: "auto",
           }}
         >
-          Contenu responsive
+          <Introduction />
         </Box>
       </Container>
       <Box
