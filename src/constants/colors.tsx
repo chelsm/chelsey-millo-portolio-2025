@@ -1,8 +1,13 @@
+
 export const colorsLightMode = {
   primary: "#A7211D", // red
   secondary: "#292929", // dark gray
+  
   background: "#FFD4E5", // light pink
   text: "#292929", // dark gray
+  
+  yellow:"#FCD435", // yellow
+  red_pastel:"#F28C8C", // pastel red
 
   navBackground: "#FDFCF3", // off-white
   navText: "#A7211D", // dark gray

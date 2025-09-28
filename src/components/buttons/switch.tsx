@@ -1,7 +1,7 @@
 import { FormControlLabel, Switch } from "@mui/material";
 import React from "react";
 import type { ThemeAction } from "../../context/themeReducer";
-import { useThemeColors } from "../../context/themeContext";
+import { useThemeColors } from "../../context/useThemeColors";
 
 type ButtonSwitchProps = {
   darkMode: boolean;

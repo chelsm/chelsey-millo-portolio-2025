@@ -13,9 +13,9 @@ import {
   Toolbar,
 } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
-import redLogo from "../assets/logo_red.jpg";
-import pinkLogo from "../assets/logo_pink.jpg";
-import { useThemeColors } from "../context/themeContext";
+import redLogo from "../../assets/logo_red.jpg";
+import pinkLogo from "../../assets/logo_pink.jpg";
+import { useThemeColors } from "../../context/useThemeColors";
 
 const useNavbarStyles = (colors: {
   primary: string;

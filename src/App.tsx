@@ -1,8 +1,9 @@
-import { Box, Button, Container } from "@mui/material";
-import { useThemeColors } from "./context/themeContext";
+import { Box, Container } from "@mui/material";
+import { useThemeColors } from "./context/useThemeColors";
 import Navbar from "./components/navbar";
 import ButtonSwitch from "./components/buttons/switch";
 import Introduction from "./components/introduction";
+import Presentation from "./components/presentation";
 
 const App = () => {
   const { state, dispatch } = useThemeColors();
@@ -17,18 +18,28 @@ const App = () => {
     >
       <Navbar />
 
-      <Container maxWidth="lg" disableGutters component="main">
+      <Container
+        maxWidth="lg"
+        disableGutters
+        component="main"
+        sx={{
+          "@media (min-width: 1200px)": {
+            maxWidth: "initial",
+          },
+        }}
+      >
         <Box
-          sx={{
-            width: {
-              xs: "90%",
-              sm: "80%",
-              md: "70%",
-            },
-            margin: "auto",
-          }}
+        // sx={{
+        //   width: {
+        //     xs: "90%",
+        //     sm: "90%",
+        //     md: "80%",
+        //   },
+        //   margin: "auto",
+        // }}
         >
           <Introduction />
+          <Presentation />
         </Box>
       </Container>
       <Box
