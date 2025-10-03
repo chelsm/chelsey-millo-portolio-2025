@@ -19,6 +19,9 @@ export const colorsDarkMode = {
   background: "#292929",
   text: "#FDFCF3",
 
+  yellow:"#FCD435", // yellow
+  red_pastel:"#F28C8C", // pastel red
+
   navBackground: "#1C1C1B", 
   navText: "#E884AB",
 };

@@ -4,6 +4,7 @@ import Navbar from "./components/navbar";
 import ButtonSwitch from "./components/buttons/switch";
 import Introduction from "./components/introduction";
 import Presentation from "./components/presentation";
+import Project from "./components/project";
 
 const App = () => {
   const { state, dispatch } = useThemeColors();
@@ -28,18 +29,13 @@ const App = () => {
           },
         }}
       >
-        <Box
-        // sx={{
-        //   width: {
-        //     xs: "90%",
-        //     sm: "90%",
-        //     md: "80%",
-        //   },
-        //   margin: "auto",
-        // }}
-        >
+        <Box>
           <Introduction />
           <Presentation />
+          <Project 
+            // props
+            title="professionnels"
+          />
         </Box>
       </Container>
       <Box
