@@ -27,3 +27,8 @@ body,
   font-family: "RougeScript-Regular";
   src: url("./assets/fonts/rougescript/RougeScript-Regular.ttf") format("truetype");
 }
+
+@font-face {
+  font-family: "Pompiere-Regular";
+  src: url("./assets/fonts/pompiere/Pompiere-Regular.ttf") format("truetype");
+}
