@@ -16,6 +16,7 @@ export const colorsLightMode = {
 export const colorsDarkMode = {
   primary: "#FFD4E5",
   secondary: "#292929",
+  
   background: "#292929",
   text: "#FDFCF3",
 
