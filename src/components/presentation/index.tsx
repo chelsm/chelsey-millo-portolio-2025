@@ -4,13 +4,14 @@ import { useThemeColors } from "../../context/useThemeColors";
 
 const useStyles = makeStyles({
   root: {
-    minHeight: "100vh",
+    // minHeight: "100vh",
     height: "100%",
     textAlign: "center",
     display: "flex",
     flexDirection: "column",
     justifyContent: "center",
     gap: "5vh",
+    padding: '50px 0',
   },
   presentation__title: {
     textTransform: "uppercase",
@@ -46,21 +47,21 @@ const Presentation = () => {
       component={"section"}
       className={classes.root}
       sx={{
-        backgroundImage: `
-        repeating-linear-gradient(
-          to right, 
-          ${colors.red_pastel} ,        
-          ${colors.red_pastel}  60px, 
-          ${colors.background} 60px, 
-          ${colors.background} 120px 
-        )
-      `,
+      //   backgroundImage: `
+      //   repeating-linear-gradient(
+      //     to right, 
+      //     ${colors.red_pastel} ,        
+      //     ${colors.red_pastel}  60px, 
+      //     ${colors.background} 60px, 
+      //     ${colors.background} 120px 
+      //   )
+      // `,
       }}
     >
       <Box
         className={classes.presentation}
         sx={{
-          bgcolor: colors.navBackground,
+          // bgcolor: colors.navBackground,
           width: {
             xs: "70%",
             sm: "80%",

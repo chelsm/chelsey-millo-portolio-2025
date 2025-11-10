@@ -7,7 +7,8 @@ export const colorsLightMode = {
   text: "#292929", // dark gray
   
   yellow:"#FCD435", // yellow
-  red_pastel:"#F28C8C", // pastel red
+  red_pastel:"#A7211D", // pastel red
+  // red_pastel:"#F28C8C", // pastel red
 
   navBackground: "#FDFCF3", // off-white
   navText: "#A7211D", // dark gray

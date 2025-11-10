@@ -33,8 +33,10 @@ const App = () => {
           <Introduction />
           <Presentation />
           <Project 
-            // props
             title="professionnels"
+          />
+           <Project 
+            title="scolaires & personnels"
           />
         </Box>
       </Container>
