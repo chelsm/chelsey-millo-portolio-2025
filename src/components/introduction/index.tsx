@@ -7,7 +7,6 @@ import Navbar from '../navbar';
 const useStyles = makeStyles({
   root: {
     backgroundImage: `url(${Background})`,
-    // minHeight: 'calc(100vh - 80px)',
     display: 'flex',
     justifyContent: 'center',
     flexDirection: 'column',
@@ -15,11 +14,11 @@ const useStyles = makeStyles({
     backgroundBlendMode: 'multiply', 
   },
   introduction__container: {
-    minHeight: 'calc(100vh - 100px)',
+    minHeight: 'calc(100vh - 120px)',
     textAlign: 'center',
     display: 'flex',
     flexDirection: 'column',
-    justifyContent: 'center',
+    justifyContent: 'space-evenly',
     alignItems: 'center',
     gap: '8vh'
   },
@@ -65,7 +64,6 @@ const Introduction = () => {
         className={classes.introduction__container}
         sx={{
           width: {
-            // xs: "100%",
             sm: '90%',
             md: '80%',
           },

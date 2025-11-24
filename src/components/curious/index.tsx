@@ -2,7 +2,7 @@ import { Box, Typography } from '@mui/material';
 import { makeStyles } from '@mui/styles';
 import { useThemeColors } from '../../context/useThemeColors';
 import ButtonCta from '../buttons/cta';
-import arrowYellow from '../../assets/images/decoration/arrow_yellow.svg';
+import Arrow from '../../assets/images/decoration/arrow'
 
 const useStyles = makeStyles({
   root: {
@@ -99,10 +99,10 @@ const GitHubLink = () => {
           <ButtonCta readableName="mon github" link="https://github.com/chelsm" />
           <Box
             className={classes.curious__container__decoration}
-            component="img"
-            src={arrowYellow}
-            alt="flèche qui pointe vers le bouton gitHub"
-          />
+          >
+            <Arrow color={colors.arrow_line} />
+          </Box>
+
         </Box>
       </Box>
     </Box>

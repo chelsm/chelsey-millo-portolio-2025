@@ -75,6 +75,7 @@ const Project = ({ title }: { title: string }) => {
                 color: colors.primary,
                 fontFamily: "'RougeScript-Regular', sans-serif",
                 fontSize: 40,
+                marginTop: -2,
                 '@media (max-width:600px)': {
                   fontSize: 32,
                 },

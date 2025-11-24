@@ -4,7 +4,6 @@ import { useThemeColors } from '../../context/useThemeColors';
 
 const useStyles = makeStyles({
   root: {
-    // minHeight: "100vh",
     height: '100%',
     textAlign: 'center',
     display: 'flex',
@@ -91,7 +90,8 @@ const Presentation = () => {
             <Box
               component="span"
               sx={{
-                fontFamily: "'Poppins-Medium', sans-serif",
+                fontFamily: "'Poppins-ExtraBold', sans-serif",
+                textTransform: 'uppercase',
                 color: colors.blue,
                 margin: '0 5px',
                 padding: '5px 10px',
@@ -113,7 +113,7 @@ const Presentation = () => {
                 fontSize: 16,
               }}
             >
-              'tʃɛlsi *
+              'ʃɛlsi *
             </Typography>
             ) et je viens d'obtenir un Mastère en Développement Manager Full Stack. Même si j'ai pu
             toucher à plusieurs aspects du développement, je m'oriente aujourd'hui vers le
@@ -148,7 +148,7 @@ const Presentation = () => {
             textAlign: 'right',
           }}
         >
-          *tch + è + lsi
+          *ch + è + lsi
         </Typography>
       </Box>
     </Box>

@@ -35,7 +35,6 @@ const Contact = () => {
       className={classes.root}
       sx={{
         width: {
-          // xs: "100%",
           sm: '90%',
           md: '80%',
         },
@@ -48,6 +47,9 @@ const Contact = () => {
           sx={{
             color: colors.secondary,
             fontFamily: "'Poppins-ExtraBold', sans-serif",
+            '@media (max-width:600px)': {
+              fontSize: 30,
+            },
           }}
         >
           {'merci, '}
@@ -59,6 +61,9 @@ const Contact = () => {
               fontFamily: "'RougeScript-Regular', sans-serif",
               fontWeight: '800',
               fontSize: 50,
+              '@media (max-width:600px)': {
+                fontSize: 45,
+              },
             }}
           >
             bye !

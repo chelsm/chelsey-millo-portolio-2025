@@ -2,6 +2,8 @@ export const colorsLightMode = {
   primary: '#092A7E', // dark blue
   secondary: '#292929', // dark gray
 
+  arrow_line: '#292929',
+
   background: '#FDFCF3', // creamy white
   background_alt: '#FFF1B7', // pure white
   background_button: '#EB5B2D', // orange
@@ -16,7 +18,6 @@ export const colorsLightMode = {
   white: '#FDFCF3', // white
   pink: '#F9BCC4', // pink
   orange: '#EB5B2D', // orange
-  yellow: '#FCD435', // yellow
   red_pastel: '#A7211D', // pastel red
 
   navBackground: '#FDFCF3', // off-white
@@ -26,6 +27,8 @@ export const colorsLightMode = {
 export const colorsDarkMode = {
   primary: '#FFD4E5',
   secondary: '#FDFCF3',
+
+  arrow_line: '#FDFCF3',
 
   background: '#292929',
   background_alt: '#3e3e3eff', // pure white
@@ -42,7 +45,6 @@ export const colorsDarkMode = {
   dark_pink: '#F195BA', // dark pink
   pink: '#F9BCC4', // pink
   orange: '#FFD4E5',
-  yellow: '#FCD435', // yellow
   red_pastel: '#F28C8C', // pastel red
 
   navBackground: '#1C1C1B',
