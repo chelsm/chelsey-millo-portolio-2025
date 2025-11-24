@@ -1,5 +1,3 @@
-//footer
-import React from 'react';
 import { Box, Typography } from '@mui/material';
 import { makeStyles } from '@mui/styles';
 import { useThemeColors } from '../../context/useThemeColors';      
