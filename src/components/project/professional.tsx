@@ -93,7 +93,7 @@ const ProjectProfessional = () => {
             <Typography
               className={classes.project__information_card_text}
               sx={{
-                color: colors.secondary,
+                color: colors.black,
                 fontSize: { xs: '18px', sm: '20px', md: '20px' },
               }}
             >
@@ -103,7 +103,7 @@ const ProjectProfessional = () => {
             <Typography
               className={classes.project__information_card_text}
               sx={{
-                color: colors.secondary,
+                color: colors.black,
                 fontSize: { xs: '18px', sm: '20px', md: '20px' },
               }}
             >
@@ -121,7 +121,7 @@ const ProjectProfessional = () => {
             <Typography
               className={classes.project__information_card_text}
               sx={{
-                color: colors.secondary,
+                color: colors.black,
                 fontSize: { xs: '18px', sm: '20px', md: '20px' },
               }}
             >
@@ -129,13 +129,13 @@ const ProjectProfessional = () => {
             </Typography>
             <ul
               className={classes.project__information_card_text}
-              style={{ color: colors.secondary }}
+              style={{ color: colors.black }}
             >
               <li>
                 <Typography
                   className={classes.project__information_card_text}
                   sx={{
-                    color: colors.secondary,
+                    color: colors.black,
                     fontSize: { xs: '18px', sm: '20px', md: '20px' },
                   }}
                 >
@@ -146,7 +146,7 @@ const ProjectProfessional = () => {
                 <Typography
                   className={classes.project__information_card_text}
                   sx={{
-                    color: colors.secondary,
+                    color: colors.black,
                     fontSize: { xs: '18px', sm: '20px', md: '20px' },
                   }}
                 >
@@ -157,7 +157,7 @@ const ProjectProfessional = () => {
                 <Typography
                   className={classes.project__information_card_text}
                   sx={{
-                    color: colors.secondary,
+                    color: colors.black,
                     fontSize: { xs: '18px', sm: '20px', md: '20px' },
                   }}
                 >
@@ -176,7 +176,7 @@ const ProjectProfessional = () => {
             <Typography
               className={classes.project__information_card_text}
               sx={{
-                color: colors.secondary,
+                color: colors.black,
                 fontSize: { xs: '18px', sm: '20px', md: '20px' },
               }}
             >

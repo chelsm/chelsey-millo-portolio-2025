@@ -6,7 +6,6 @@ import Scolar from './scolar';
 
 const useStyles = makeStyles({
   root: {
-    minHeight: 'calc(100vh - 10px)',
     height: '100%',
     display: 'flex',
     padding: '50px 0',
@@ -35,36 +34,35 @@ const Project = ({ title }: { title: string }) => {
 
   return (
     <Box
+      id='projets'
       component={'section'}
       className={classes.root}
       sx={{
-        // border: '5px solid ' + colors.primary,
-        backgroundColor: colors.navBackground,
+        backgroundColor: colors.background,
       }}
     >
       <Box
-        sx={
-          {
-            width: {
-              xs: '70%',
-              sm: '90%',
-              md: '80%',
-            },
-            margin: 'auto',
-          }
-        }
+        sx={{
+          width: {
+            xs: '70%',
+            sm: '90%',
+            md: '80%',
+          },
+          margin: 'auto',
+        }}
       >
         <Box className={classes.project__container}>
-          <Box
-            className={classes.project__title}
-          >
+          <Box className={classes.project__title}>
             <Typography
               variant="h2"
               component="h2"
               sx={{
                 color: colors.primary,
-                fontSize: 24,
+                fontSize: 50,
                 fontFamily: "'Poppins-ExtraBold', sans-serif",
+                '@media (max-width:600px)': {
+                  fontSize: 32,
+                },
               }}
             >
               Mes projets
@@ -76,7 +74,10 @@ const Project = ({ title }: { title: string }) => {
               sx={{
                 color: colors.primary,
                 fontFamily: "'RougeScript-Regular', sans-serif",
-                fontSize: 30,
+                fontSize: 40,
+                '@media (max-width:600px)': {
+                  fontSize: 32,
+                },
               }}
             >
               {title}
@@ -85,7 +86,6 @@ const Project = ({ title }: { title: string }) => {
 
           {projectComponent}
         </Box>
-
       </Box>
     </Box>
   );

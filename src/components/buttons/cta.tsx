@@ -16,20 +16,22 @@ const ButtonCta = ({ readableName, link }: ButtonCtaProps) => {
       href={link}
       target="_blank"
       sx={{
+        textTransform: 'lowercase',
+        letterSpacing: 1,
         width: 'fit-content',
         padding: '5px 15px',
-        backgroundColor: colors.background,
-        color: colors.primary,
-        fontFamily: "'Poppins-ExtraBold', sans-serif",
-        textTransform: 'none',
+        backgroundColor: colors.background_button,
+        color: colors.text_button,
+        fontFamily: "'Poppins-Medium', sans-serif",
+        fontWeight: 800,
         fontSize: 16,
-        borderRadius: 50,
+        borderRadius: 4,
         boxShadow: 'none',
 
         '&:hover': {
           boxShadow: 'none',
           backgroundColor: colors.primary,
-          color: colors.navBackground,
+          color: colors.background,
         },
       }}
     >

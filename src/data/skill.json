@@ -1,0 +1,36 @@
+{
+  "skills": [
+    {
+      "name": "développement web",
+      "list": ["HTML / CSS / JS", "typescript", "react  / node.js", "API REST / GraphQL"],
+      "pins": "circle",
+      "color": "#EB5B2D",
+      "rotatation": "-7deg",
+      "top": "-10px"
+    },
+    {
+      "name": "outils & méthodes",
+      "list": ["agile scrum", "Tests unitaires", "Clean Code", "rgaa"],
+      "pins": "shape",
+      "color": "#292929",
+      "rotatation": "-2deg",
+      "top": "10px"
+    },
+    {
+      "name": "organisation",
+      "list": ["Priorisation", "agilité", "Gestion du temps"],
+      "pins": "square",
+      "color": "#E884AB",
+      "rotatation": "3.75deg",
+      "top": "-30px"
+    },
+    {
+      "name": "Communication & Collaboration",
+      "list": ["Travail en équipe", "ouverte aux feedbacks"],
+      "pins": "flower",
+      "color": "#3255AF",
+      "rotatation": "10deg",
+      "top": "30px"
+    }
+  ]
+}
