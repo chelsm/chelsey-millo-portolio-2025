@@ -15,6 +15,13 @@ export type Subproject = {
   link?: string;
 };
 
+export interface SchoolProject {
+  title: string;
+  description: string;
+  image: string;
+  gitLink?: string;
+}
+
 export interface SkillItem {
   name: string;
   list: string[];
@@ -27,3 +34,4 @@ export interface SkillItem {
 export interface SkillsData {
   skills: SkillItem[];
 }
+
