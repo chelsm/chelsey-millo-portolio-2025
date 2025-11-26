@@ -55,7 +55,6 @@ const useStyles = makeStyles({
     lineHeight: 1.5,
     textShadow: '0px 1px 3px rgba(0,0,0,0.5)',
   },
-
   card: {
     position: 'relative',
     height: 400,
@@ -63,7 +62,7 @@ const useStyles = makeStyles({
     overflow: 'hidden',
     cursor: 'pointer',
     transition: '0.3s ease',
-
+    boxShadow: '0 10px 20px rgba(0,0,0,0.1)',
     '&:hover $image': {
       transform: 'scale(1.12)',
       filter: 'brightness(0.5)',
@@ -76,7 +75,6 @@ const useStyles = makeStyles({
       opacity: 1,
     },
   },
- 
 });
 
 const Scolar = () => {
@@ -153,7 +151,7 @@ const Scolar = () => {
     slidesToScroll: 1,
     centerMode: true,
     centerPadding: '20px',
-    arrows: true
+    arrows: true,
   };
 
   return (

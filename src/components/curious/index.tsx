@@ -2,7 +2,7 @@ import { Box, Typography } from '@mui/material';
 import { makeStyles } from '@mui/styles';
 import { useThemeColors } from '../../context/useThemeColors';
 import ButtonCta from '../buttons/cta';
-import Arrow from '../../assets/images/decoration/arrow'
+import Arrow from '../../assets/images/decoration/arrow';
 
 const useStyles = makeStyles({
   root: {
@@ -97,16 +97,13 @@ const GitHubLink = () => {
             plongez dans mon code et mes projets
           </Typography>
           <ButtonCta
-          readableName="mon github"
-          link="https://github.com/chelsm"
-          trackingName="my_github_button"
+            readableName="mon github"
+            link="https://github.com/chelsm"
+            trackingName="my_github_button"
           />
-          <Box
-            className={classes.curious__container__decoration}
-          >
+          <Box className={classes.curious__container__decoration}>
             <Arrow color={colors.arrow_line} />
           </Box>
-
         </Box>
       </Box>
     </Box>

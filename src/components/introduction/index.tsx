@@ -11,7 +11,7 @@ const useStyles = makeStyles({
     justifyContent: 'center',
     flexDirection: 'column',
     alignItems: 'center',
-    backgroundBlendMode: 'multiply', 
+    backgroundBlendMode: 'multiply',
   },
   introduction__container: {
     minHeight: 'calc(100vh - 120px)',
@@ -20,15 +20,15 @@ const useStyles = makeStyles({
     flexDirection: 'column',
     justifyContent: 'space-evenly',
     alignItems: 'center',
-    gap: '8vh'
+    gap: '8vh',
   },
-  introduction__presentation:{
+  introduction__presentation: {
     display: 'flex',
     flexDirection: 'column',
     gap: 15,
     alignItems: 'center',
     '@media (max-width:600px)': {
-      gap: 5
+      gap: 5,
     },
   },
   introduction__title: {
@@ -54,7 +54,9 @@ const Introduction = () => {
   const colors = state.colors;
 
   return (
-    <Box component={'section'} className={classes.root}
+    <Box
+      component={'section'}
+      className={classes.root}
       sx={{
         backgroundColor: colors.background_filter,
       }}
@@ -71,109 +73,109 @@ const Introduction = () => {
         }}
       >
         <Box className={classes.introduction__presentation}>
-        <Box className={classes.introduction__title}>
-          <Typography
-            variant="subtitle1"
-            variantMapping={{ subtitle1: 'p' }}
+          <Box className={classes.introduction__title}>
+            <Typography
+              variant="subtitle1"
+              variantMapping={{ subtitle1: 'p' }}
+              sx={{
+                textTransform: 'uppercase',
+                letterSpacing: 3,
+                fontFamily: 'Arial, sans-serif',
+                WebkitTextFillColor: 'transparent',
+                WebkitTextStrokeWidth: 2,
+                fontSize: 70,
+                fontWeight: 800,
+                height: 115,
+                '@media (max-width:600px)': {
+                  fontSize: 45,
+                },
+              }}
+            >
+              hello
+            </Typography>
+            <Typography
+              variant="subtitle1"
+              variantMapping={{ subtitle1: 'p' }}
+              sx={{
+                fontFamily: "'RougeScript-Regular', sans-serif",
+                fontSize: 80,
+                color: colors.primary,
+                '@media (max-width:600px)': {
+                  fontSize: 50,
+                },
+              }}
+            >
+              , c'est
+            </Typography>
+          </Box>
+          <Box
+            className={classes.introduction__title__name}
             sx={{
-              textTransform: 'uppercase',
-              letterSpacing: 3,
-              fontFamily: 'Arial, sans-serif',
-              WebkitTextFillColor: 'transparent',
-              WebkitTextStrokeWidth: 2,
-              fontSize: 70,
-              fontWeight: 800,
-              height: 115,
+              backgroundColor: colors.pink,
+              display: 'inline-block',
+              padding: '5px 60px',
+              borderRadius: '10px',
+              width: 'fit-content',
+              transform: 'rotate(-4deg)',
+              transition: 'transform 0.3s ease',
+              '&:hover': {
+                transform: 'rotate(0deg)',
+              },
               '@media (max-width:600px)': {
-                fontSize: 45,
+                padding: '5px 30px',
               },
             }}
           >
-            hello
-          </Typography>
+            <Typography
+              variant="subtitle1"
+              variantMapping={{ subtitle1: 'p' }}
+              sx={{
+                fontFamily: "'Poppins-ExtraBold', sans-serif",
+                textTransform: 'uppercase',
+                fontSize: 50,
+                color: colors.blue,
+                '@media (max-width:600px)': {
+                  fontSize: 20,
+                },
+              }}
+            >
+              Chelsey
+            </Typography>
+          </Box>
+
           <Typography
-            variant="subtitle1"
-            variantMapping={{ subtitle1: 'p' }}
+            variant="h1"
             sx={{
-              fontFamily: "'RougeScript-Regular', sans-serif",
-              fontSize: 80,
+              fontFamily: 'Times New Roman, serif',
+              letterSpacing: 1,
+              fontWeight: 600,
+              fontSize: 55,
               color: colors.primary,
               '@media (max-width:600px)': {
-                fontSize: 50,
+                fontSize: 25,
               },
             }}
           >
-            , c'est
+            développeuse front end
           </Typography>
         </Box>
-        <Box
-          className={classes.introduction__title__name}
-          sx={{
-            backgroundColor: colors.pink,
-            display: 'inline-block',
-            padding: '5px 60px',
-            borderRadius: '10px',
-            width: 'fit-content',
-            transform: 'rotate(-4deg)',
-             transition: 'transform 0.3s ease',
-            '&:hover': {
-             transform: 'rotate(0deg)',
-            },
-            '@media (max-width:600px)': {
-              padding: '5px 30px',
-            },
-          }}
-        >
-          <Typography
-            variant="subtitle1"
-            variantMapping={{ subtitle1: 'p' }}
-            sx={{
-              fontFamily: "'Poppins-ExtraBold', sans-serif",
-              textTransform: 'uppercase',
-              fontSize: 50,
-              color: colors.blue,
-              '@media (max-width:600px)': {
-                fontSize: 20,
-              },
-            }}
-          >
-            Chelsey
-          </Typography>
-        </Box>
-
         <Typography
-          variant="h1"
+          variant="body1"
           sx={{
-            fontFamily: 'Times New Roman, serif',
+            color: colors.orange,
+            fontFamily: "'Poppins-Medium', sans-serif",
+            fontSize: 20,
             letterSpacing: 1,
-            fontWeight: 600,
-            fontSize: 55,
-            color: colors.primary,
+            textAlign: 'center',
+            maxWidth: 300,
             '@media (max-width:600px)': {
-              fontSize: 25,
+              fontSize: 15,
             },
           }}
         >
-          développeuse front end
+          à la recherche de nouvelles aventures en cdi
         </Typography>
       </Box>
-      <Typography
-        variant="body1"
-        sx={{
-          color: colors.orange,
-          fontFamily: "'Poppins-Medium', sans-serif",
-          fontSize: 20,
-          letterSpacing: 1,
-          textAlign: 'center',
-          maxWidth: 300,
-          '@media (max-width:600px)': {
-            fontSize: 15,
-          },
-        }}
-      >
-        à la recherche de nouvelles aventures en cdi
-      </Typography>
-    </Box>
     </Box>
   );
 };

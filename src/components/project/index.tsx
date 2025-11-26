@@ -34,7 +34,7 @@ const Project = ({ title }: { title: string }) => {
 
   return (
     <Box
-      id='projets'
+      id="projets"
       component={'section'}
       className={classes.root}
       sx={{

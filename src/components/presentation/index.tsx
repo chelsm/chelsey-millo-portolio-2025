@@ -12,7 +12,7 @@ const useStyles = makeStyles({
     gap: '5vh',
     padding: '50px 0',
   },
-    presentation__container: {
+  presentation__container: {
     padding: 30,
     display: 'flex',
     flexDirection: 'column',
@@ -43,7 +43,7 @@ const Presentation = () => {
 
   return (
     <Box
-      id='présentation'
+      id="présentation"
       component={'section'}
       className={classes.root}
       sx={{
