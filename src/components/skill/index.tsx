@@ -67,7 +67,7 @@ const Skill = () => {
       <Box
         sx={{
           width: {
-            xs: '70%',
+            xs: '80%',
             sm: '90%',
             md: '80%',
           },

@@ -4,6 +4,7 @@ import { useThemeColors } from '../../../context/useThemeColors';
 import StarIcon from '../../../assets/images/decoration/star.svg';
 import { pinIcons } from '../../../utils/pinsIcons';
 import { useState } from 'react';
+import useMixPanel from '../../tracking/mixPanel';
 
 const useStyles = makeStyles({
   root: {
@@ -31,6 +32,7 @@ const Card = (props: {
   const classes = useStyles();
   const { state } = useThemeColors();
   const colors = state.colors;
+  const mixPanel = useMixPanel();
 
   const [zIndex, setZIndex] = useState(1);
   const [isHover, setIsHover] = useState(false);
@@ -42,6 +44,9 @@ const Card = (props: {
         const newZ = props.getZIndex();
         setZIndex(newZ);
         setIsHover(true);
+        mixPanel.track("skill_card_hover", {
+          skill: props.title,
+        });
       }}
        onMouseLeave={() => setIsHover(false)}
       sx={{

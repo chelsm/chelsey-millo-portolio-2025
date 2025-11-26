@@ -6,13 +6,21 @@ import Presentation from './components/presentation';
 import Project from './components/project';
 import Curious from './components/curious';
 import FlowerDecoration from './assets/images/decoration/flower_orange_big.svg';
-import type { JSX } from 'react';
+import { useEffect, type JSX } from 'react';
 import Skill from './components/skill';
 import Contact from './components/contact';
 import Footer from './components/footer';
+import useMixPanel from './components/tracking/mixPanel';
 
 const App = () => {
   const { state, dispatch } = useThemeColors();
+  const mixPanel = useMixPanel();
+
+  useEffect(() => {
+    mixPanel.track('connection', {
+      page: 'portfolio',
+    });
+  }, [mixPanel]);
 
   const FlowerRender: () => JSX.Element = () => {
     return (

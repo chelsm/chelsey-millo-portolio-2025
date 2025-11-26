@@ -54,7 +54,7 @@ const Presentation = () => {
         className={classes.presentation__container}
         sx={{
           width: {
-            xs: '70%',
+            xs: '80%',
             sm: '80%',
             md: '80%',
           },

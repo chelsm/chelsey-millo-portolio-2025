@@ -16,7 +16,7 @@ import MenuIcon from '@mui/icons-material/Menu';
 import portfolioLogo from '../../assets/images/logo.svg';
 import { useThemeColors } from '../../context/useThemeColors';
 
-const useNavbarStyles = (colors: { primary: string; text: string; navBackground: string }) => ({
+const useNavbarStyles = (primary: string) => ({
   toolbar: {
     display: 'flex',
     justifyContent: 'center',
@@ -25,14 +25,14 @@ const useNavbarStyles = (colors: { primary: string; text: string; navBackground:
     height: 100,
     px: { xs: 1, sm: 3, md: 6 },
     paddingTop: 2,
-    color: colors.primary,
+    color: primary,
     width: '85vw',
     flexWrap: 'wrap',
   },
   button: {
     textTransform: 'uppercase',
     fontSize: { xs: '14px', sm: '16px' },
-    color: colors.primary,
+    color: primary,
     backgroundColor: 'transparent',
     fontFamily: "'Poppins-ExtraBold', sans-serif",
     letterSpacing: 1,
@@ -43,12 +43,12 @@ const useNavbarStyles = (colors: { primary: string; text: string; navBackground:
   drawerPaper: {
     boxSizing: 'border-box',
     width: 240,
-    bgcolor: colors.navBackground,
+    bgcolor: 'transparent',
   },
   drawerHeader: {
     textAlign: 'center',
     p: 2,
-    bgcolor: colors.navBackground,
+    bgcolor: 'transparent',
   },
 });
 
@@ -60,7 +60,7 @@ const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const handleDrawerToggle = () => setIsMenuOpen((prev) => !prev);
 
-  const styles = useNavbarStyles(colors);
+  const styles = useNavbarStyles(colors.primary);
 
   const handleClick = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });

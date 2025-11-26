@@ -2,6 +2,7 @@ import { FormControlLabel, Switch } from "@mui/material";
 import React from "react";
 import type { ThemeAction } from "../../context/themeReducer";
 import { useThemeColors } from "../../context/useThemeColors";
+import useMixPanel from "../tracking/mixPanel";
 
 type ButtonSwitchProps = {
   darkMode: boolean;
@@ -9,11 +10,16 @@ type ButtonSwitchProps = {
 };
 
 const ButtonSwitch = ({ darkMode, dispatch }: ButtonSwitchProps) => {
-  const handleChange = () => {
-    dispatch({ type: "TOGGLE_MODE" });
-  };
 
   const { state  } = useThemeColors(); 
+  const mixPanel = useMixPanel();
+ 
+  const handleChange = () => {
+    dispatch({ type: "TOGGLE_MODE" });
+    mixPanel.track("toggle_dark_mode", {
+      mode: darkMode ? "light" : "dark",
+    });
+  };
 
   return (
     <FormControlLabel

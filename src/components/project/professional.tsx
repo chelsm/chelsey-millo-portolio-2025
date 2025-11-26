@@ -202,6 +202,7 @@ const ProjectProfessional = () => {
         <ButtonCta
           readableName="Voir le simulateur"
           link="https://monsimulateurenergetique.labanquepostale.fr/simul"
+          trackingName="view_simulator_button"
         />
       </Box>
       <Box>

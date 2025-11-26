@@ -54,7 +54,7 @@ const GitHubLink = () => {
         className={classes.curious__container}
         sx={{
           width: {
-            xs: '70%',
+            xs: '80%',
             sm: '90%',
             md: '80%',
           },
@@ -96,7 +96,11 @@ const GitHubLink = () => {
           >
             plongez dans mon code et mes projets
           </Typography>
-          <ButtonCta readableName="mon github" link="https://github.com/chelsm" />
+          <ButtonCta
+          readableName="mon github"
+          link="https://github.com/chelsm"
+          trackingName="my_github_button"
+          />
           <Box
             className={classes.curious__container__decoration}
           >

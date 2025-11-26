@@ -82,7 +82,11 @@ const Contact = () => {
         >
           Mon portfolio se termine ici… et j’aimerais écrire la suite avec une belle équipe en CDI.
         </Typography>
-        <ButtonCta readableName="me contacter" link="mailto:chelseym.pro@gmail.com" />
+        <ButtonCta
+          readableName="me contacter"
+          link="mailto:chelseym.pro@gmail.com"
+          trackingName="contact_me_button"
+        />
       </Box>
     </Box>
   );
